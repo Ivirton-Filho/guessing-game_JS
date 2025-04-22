@@ -4,6 +4,10 @@ let chute = 0;
 let validarLoop = 0;
 do {
     chute = prompt("Digite o número entre 1 e 30");
+    if( chute < 0 || chute > 30){
+        window.alert("Digite um número valido");
+        continue;
+    }
 
     if (chute == numeroSecreto) {
         window.alert(`Você acertou! O número secreto é ${numeroSecreto}`);
